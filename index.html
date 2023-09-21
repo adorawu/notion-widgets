@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refreshing to do</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="Title">weekly assignments</h1>
+    <table id="Table">
+        <tr id="Header">
+            <th id="Name">name</th>
+            <th id="Due">due</th>
+            <th id="Status">status</th>
+        </tr>
+        <tr class="row 1">
+            <td>physics prelab</td>
+            <td>tues 2:00 PM</td>
+            <td id="Status_Row_1">
+                <!-- <input type="radio" class="not_started" name="status_1">
+                <label for="not_started">not started</label>
+                <input type="radio" class="in_progress" name="status_1">
+                <label for="in_progress">in progress</label>
+                <input type="radio" class="done" name="status_1">
+                <label for="done">done</label> -->
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                      <a href="#">not started</a>
+                      <a href="#">in progress</a>
+                      <a href="#">done</a>
+                    </div>
+                  </div>
+            </td>
+        </tr>
+        <tr class="row 2">
+            <td>physics lab notes</td>
+            <td>tues 2:00 PM</td>
+            <td id="Status_Row_2">
+                <input type="radio" class="not_started" name="status_2">
+                <label for="not_started">not started</label>
+                <input type="radio" class="in_progress" name="status_2">
+                <label for="in_progress">in progress</label>
+                <input type="radio" class="done" name="status_2">
+                <label for="done">done</label>
+            </td>
+        </tr>
+        <tr class="row 3">
+            <td>physics quest</td>
+            <td>tues 11:30 PM</td>
+            <td id="Status_Row_3">
+                <input type="radio" class="not_started" name="status_3">
+                <label for="not_started">not started</label>
+                <input type="radio" class="in_progress" name="status_3">
+                <label for="in_progress">in progress</label>
+                <input type="radio" class="done" name="status_3">
+                <label for="done">done</label>
+            </td>
+        </tr>
+        <tr class="row 3">
+            <td>ochem prelab</td>
+            <td>wed 6:30 PM</td>
+            <td id="Status_Row_4">
+                <input type="radio" class="not_started" name="status_4">
+                <label for="not_started">not started</label>
+                <input type="radio" class="in_progress" name="status_4">
+                <label for="in_progress">in progress</label>
+                <input type="radio" class="done" name="status_4">
+                <label for="done">done</label>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
