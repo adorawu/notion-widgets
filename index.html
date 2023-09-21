@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>refreshing to do</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
 </head>
 <body>
     <h1 id="Title">weekly assignments</h1>
@@ -24,15 +25,41 @@
                 <label for="in_progress">in progress</label>
                 <input type="radio" class="done" name="status_1">
                 <label for="done">done</label> -->
-                <div class="dropdown">
-                    <button class="dropbtn">Dropdown</button>
+                <!-- <div class="dropdown">
+                    <button class="dropbtn">not started</button>
                     <div class="dropdown-content">
                       <a href="#">not started</a>
                       <a href="#">in progress</a>
                       <a href="#">done</a>
                     </div>
+                  </div> -->
+                  <div id="dropdown">
+                    <select id="test1">
+                      <option value="not started">not started</option>
+                      <option value="in progress">in progress</option>
+                      <option value="done">done</option>
+                    </select>
                   </div>
             </td>
+            <script type="text/javascript">
+                // localStorage.setItem("status1", "not_started")
+                localStorage.setItem("status2", "not_started")
+                localStorage.setItem("status3", "not_started")
+                localStorage.setItem("status4", "not_started")
+        
+                let field = document.querySelector('#test1');
+        
+                if (localStorage.getItem("status1")) {
+                    // Restore the contents of the text field
+                    field.value = localStorage.getItem("status1");
+                }
+        
+                // Listen for changes in the text field
+                field.addEventListener("change", () => {
+                    // And save the results into the local storage object
+                    localStorage.setItem("status1", field.value);
+                });
+            </script>
         </tr>
         <tr class="row 2">
             <td>physics lab notes</td>
